@@ -1,7 +1,6 @@
 # Diretórios do Android Studio
 .idea/
 .gradle/
-.local/
 .cxx/
 captures/
 .externalNativeBuild/
@@ -49,7 +48,8 @@ gradlew.bat
 settings.gradle
 
 # Configurações do ambiente
-/local.properties
+local.properties      # Ignora o arquivo na raiz do projeto
+app/local.properties # Ignora o arquivo dentro da pasta "app" (caso exista)
 
 # Logs e relatórios
 *.log
