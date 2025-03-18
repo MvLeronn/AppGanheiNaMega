@@ -15,9 +15,9 @@ Thumbs.db
 
 # Dependências e pacotes
 /node_modules/
-/libs/
-/bin/
-/gen/
+.libs/
+.bin/
+.gen/
 
 # Configurações do usuário
 *.iml
@@ -43,11 +43,12 @@ Thumbs.db
 
 # Configurações do Gradle
 .gradle/
-build/
 gradle/
 gradlew
 gradlew.bat
 settings.gradle
+
+# Configurações do ambiente
 /local.properties
 
 # Logs e relatórios
