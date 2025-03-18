@@ -1,0 +1,63 @@
+# Diretórios do Android Studio
+.idea/
+.gradle/
+.local/
+.cxx/
+captures/
+.externalNativeBuild/
+build/
+outputs/
+intermediates/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dependências e pacotes
+/node_modules/
+/libs/
+/bin/
+/gen/
+
+# Configurações do usuário
+*.iml
+*.keystore
+*.jks
+*.log
+
+# Arquivos de cache
+*.class
+*.swp
+*.swo
+*.swn
+*.tmp
+*.lock
+
+# Arquivos de compilação
+*.apk
+*.aab
+*.dex
+*.so
+*.jar
+*.aar
+
+# Configurações do Gradle
+.gradle/
+build/
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+/local.properties
+
+# Logs e relatórios
+*.log
+crashlytics-build.properties
+fabric/proguard-rules.pro
+
+# Testes
+test-results/
+androidTestResults/
+
+# Código gerado automaticamente
+**/generated/
