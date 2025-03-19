@@ -24,10 +24,18 @@ class MainActivity : AppCompatActivity() {
 
         // banco de dados de preferencias
         prefs = getSharedPreferences("db", Context.MODE_PRIVATE)
-        val result = prefs.getString("result", null)
+        val result = prefs.getString("result", "nenhum resgistro salvo")
+
+        /* Se o defValue = null
         if(result != null){
             txtResult.text = "Ultima aposta: $result"
         }
+        result?.let {
+            txtResult.text = "Ultima aposta: $it"
+        }
+        */
+        txtResult.text = "Ultima aposta: $result"
+
 
         // OnClick no button
         btnGenerate.setOnClickListener {
@@ -62,9 +70,9 @@ class MainActivity : AppCompatActivity() {
 
         txtResult.text =  numbers.toSortedSet().joinToString(" - ")
 
-        val editor = prefs.edit()
-        editor.putString("result", txtResult.text.toString())
-        editor.apply()
-
+        prefs.edit().apply {
+            putString("result", txtResult.text.toString())
+            apply()
+        }
     }
 }
